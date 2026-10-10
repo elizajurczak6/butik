@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Pliki CSS oraz Favicon -->
+    <link rel="stylesheet" href="kolory.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+    <title>Butik</title>
+  </head>
+  <body>
+    <!-- Nagłówek strony -->
+    <div class="content">
+      <header>
+        <!-- Logo po lewej stronie -->
+        <div class="butik">
+          <a href="index.html"><h1>Butik</h1></a>
+        </div>
+
+        <!-- Wyszukiwarka z dwoma przyciskami pośrodku -->
+        <div class="wyszukaj">
+          <form action="" method="post" id="searchForm">
+            <input
+              type="search"
+              name="find"
+              id="find"
+              placeholder="Wyszukaj..."
+            />
+            <div class="search-buttons">
+              <button type="submit" class="search-btn">Szukaj</button>
+              <button type="button" class="clear-btn" id="clearSearchBtn">
+                Wyczyść
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Przycisk Logowania po prawej stronie -->
+        <div class="zaloguj">
+          <button class="zal">
+            <a href="Zaloguj.html">Zaloguj się</a>
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <!-- Układ główny: Lewy pasek kategorii + treść -->
+    <div class="main-container">
+      <!-- Pasek boczny stały po lewej stronie -->
+      <aside class="lewy">
+        <ul>
+          <li>Wszystkie</li>
+          <li>Botki</li>
+          <li>Półbuty</li>
+          <li>Sandały</li>
+          <li>Trampki</li>
+          <li>Obuwie sportowe</li>
+          <li>Szpilki</li>
+          <li>Baleriny</li>
+          <li>Mokasyny</li>
+          <li>od najtańszej</li>
+          <li>od najdroższej</li>
+        </ul>
+      </aside>
+
+      <!-- Prawa sekcja (górne menu filtrowania) -->
+      <main class="prawy">
+        <nav>
+          <div class="gorny">
+            <ul>
+              <!-- Rozmiar -->
+              <li class="filter-group">
+                <span class="label">wybierz rozmiar</span>
+                <ul class="dropdown">
+                  <li data-filter="rozmiar" data-value="36">36</li>
+                  <li data-filter="rozmiar" data-value="37">37</li>
+                  <li data-filter="rozmiar" data-value="38">38</li>
+                  <li data-filter="rozmiar" data-value="39">39</li>
+                  <li data-filter="rozmiar" data-value="40">40</li>
+                  <li data-filter="rozmiar" data-value="41">41</li>
+                </ul>
+              </li>
+
+              <!-- Kolor -->
+              <li class="filter-group">
+                <span class="label">wybierz kolor</span>
+                <ul class="dropdown">
+                  <li data-filter="kolor" data-value="Czarny">Czarny</li>
+                  <li data-filter="kolor" data-value="Biały">Biały</li>
+                  <li data-filter="kolor" data-value="Beżowy">Beżowy</li>
+                  <li data-filter="kolor" data-value="Czerwony">Czerwony</li>
+                  <li data-filter="kolor" data-value="Brązowy">Brązowy</li>
+                </ul>
+              </li>
+
+              <!-- Rodzaj obcasa -->
+              <li class="filter-group">
+                <span class="label">wybierz rodzaj obcasa</span>
+                <ul class="dropdown">
+                  <li data-filter="rodzaj-obcasa" data-value="Szpilka">
+                    Szpilka
+                  </li>
+                  <li data-filter="rodzaj-obcasa" data-value="Słupek">
+                    Słupek
+                  </li>
+                  <li data-filter="rodzaj-obcasa" data-value="Kloc">Kloc</li>
+                  <li data-filter="rodzaj-obcasa" data-value="Koturn">
+                    Koturn
+                  </li>
+                  <li data-filter="rodzaj-obcasa" data-value="Płaski">
+                    Płaski
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Wysokość obcasa -->
+              <li class="filter-group">
+                <span class="label">wybierz wysokość obcasa</span>
+                <ul class="dropdown">
+                  <li data-filter="wysokosc-obcasa" data-value="0-3 cm">
+                    0 - 3 cm
+                  </li>
+                  <li data-filter="wysokosc-obcasa" data-value="4-6 cm">
+                    4 - 6 cm
+                  </li>
+                  <li data-filter="wysokosc-obcasa" data-value="7-9 cm">
+                    7 - 9 cm
+                  </li>
+                  <li data-filter="wysokosc-obcasa" data-value="10+ cm">
+                    10+ cm
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Materiał -->
+              <li class="filter-group">
+                <span class="label">wybierz materiał</span>
+                <ul class="dropdown">
+                  <li data-filter="material" data-value="Skóra naturalna">
+                    Skóra naturalna
+                  </li>
+                  <li data-filter="material" data-value="Zamsz">Zamsz</li>
+                  <li data-filter="material" data-value="Eko-skóra">
+                    Eko-skóra
+                  </li>
+                  <li data-filter="material" data-value="Tkanina">Tkanina</li>
+                  <li data-filter="material" data-value="Lakierowana">
+                    Lakierowana
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Pasek z aktywnymi filtrami -->
+        <div id="active-filters" class="active-filters">
+          <span>Aktywne filtry: <strong id="filter-summary">Brak</strong></span>
+        </div>
+        <div class="foto">
+          <!-- Karta 1 -->
+          <div class="fotoBox">
+            <div class="pict">
+              <img
+                class="pictBut"
+                src="android-chrome-192x192.png"
+                alt="Mega fajny but"
+              />
+            </div>
+            <span class="description">Mega fajny but</span>
+            <p class="price">1999 zł</p>
+          </div>
+
+          <!-- Karta 2 -->
+          <div class="fotoBox">
+            <div class="pict">
+              <img
+                class="pictBut"
+                src="android-chrome-192x192.png"
+                alt="Szpilki Eleganckie"
+              />
+            </div>
+            <span class="description">Szpilki Eleganckie</span>
+            <p class="price">299 zł</p>
+          </div>
+
+          <!-- Karta 3 -->
+          <div class="fotoBox">
+            <div class="pict">
+              <img
+                class="pictBut"
+                src="android-chrome-192x192.png"
+                alt="Sandały Letnie"
+              />
+            </div>
+            <span class="description">Sandały Letnie</span>
+            <p class="price">149 zł</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="Node.js"></script>
+</html>

@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #0c899e;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* --- NAGŁÓWEK --- */
+header {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  background-color: whitesmoke;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.butik h1 {
+  font-size: 38px;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  color: #111;
+}
+
+/* --- WYSZUKIWARKA Z 2 PRZYCISKAMI --- */
+.wyszukaj form {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 2px 4px 2px 12px;
+  gap: 8px;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.wyszukaj form:focus-within {
+  border-color: #0c899e;
+  box-shadow: 0 0 5px rgba(12, 137, 158, 0.4);
+}
+
+.wyszukaj input[type="search"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 6px 4px;
+  font-size: 14px;
+  color: #333;
+  width: 140px;
+}
+
+.search-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.search-btn {
+  background-color: #0c899e;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.search-btn:hover {
+  background-color: #085f6e;
+}
+
+.clear-btn {
+  background-color: #e0e0e0;
+  color: #333333;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.clear-btn:hover {
+  background-color: #cccccc;
+}
+
+.search-btn:active,
+.clear-btn:active {
+  transform: scale(0.95);
+}
+
+/* --- PRZYCISK ZALOGUJ SIĘ --- */
+.zal {
+  height: 40px;
+  width: 120px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 2px solid #0c899e;
+  background-color: transparent;
+  border-radius: 16px;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.zal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c899e;
+  z-index: -1;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.zal:hover::before {
+  transform: translateY(0);
+}
+
+.zal:hover {
+  color: #ffffff;
+}
+
+/* --- UKŁAD GŁÓWNY (SIDEBAR + CONTENT) --- */
+.main-container {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 65px);
+}
+
+/* PASEK BOCZNY KATEGORII */
+.lewy {
+  color: white;
+  background-color: black;
+  width: 200px;
+  min-width: 200px;
+}
+
+.lewy ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lewy ul li {
+  padding: 12px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.lewy ul li:hover {
+  background-color: #333;
+}
+
+/* PRAWA SEKCJA (MENU FILTRÓW I TREŚĆ) */
+.prawy {
+  flex: 1;
+}
+
+/* --- NAVI/FILTRY GÓRNE --- */
+nav {
+  display: flex;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  z-index: 500;
+}
+
+.gorny {
+  width: 100%;
+}
+
+.gorny > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+
+.filter-group {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  width: 20%;
+  padding: 14px 8px;
+  user-select: none;
+}
+
+.filter-group .label {
+  display: block;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.filter-group:hover .label {
+  color: #0c899e;
+}
+
+/* Rozwijane menu z własnym scrollbarem */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 160px;
+  overflow-y: auto;
+  background-color: #111;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s;
+}
+
+.filter-group:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown li {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #ccc;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.25s ease;
+}
+
+.dropdown li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c899e;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+}
+
+.dropdown li:hover::before {
+  transform: translateX(0);
+}
+
+.dropdown li:hover {
+  color: #ffffff;
+}
+
+.dropdown li.selected {
+  background-color: #085f6e;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Scrollbar */
+.dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+  background: #0c899e;
+  border-radius: 3px;
+}
+
+/* Pasek z aktywnymi filtrami */
+.active-filters {
+  background-color: #1b1b1b;
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 14px;
+  border-bottom: 1px solid #333;
+}
+.foto {
+  width: 100%;
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px; /* Dodaje ładne odstępy między kartami */
+}
+
+.fotoBox {
+  margin-bottom: 24px;
+  width: 350px;
+  background-color: #ffffff; /* Zmieniono na białe tło dla lepszej czytelności */
+  border-radius: 12px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  /* Płynne przejście powiększenia i filtrowania kolorów */
+  transition:
+    transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    filter 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Stan po najechaniu myszką (HOVER) */
+.fotoBox:hover {
+  cursor: pointer;
+  /* Powiększenie karty */
+  transform: scale(1.04);
+  /* Subtelne podkręcenie jasności i nasycenia barw */
+  filter: brightness(1.08) saturate(1.15);
+  /* Głęboki cień dający efekt uniesienia */
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+.pict {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.pictBut {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Chroni zdjęcie przed rozciąganiem i deformacją */
+  transition: transform 0.3s ease;
+}
+
+/* Opcjonalny dodatkowy mikro-efekt powiększenia samego zdjęcia */
+.fotoBox:hover .pictBut {
+  transform: scale(1.03);
+}
+
+.description {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.price {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0c899e;
+  margin: 8px 0;
+}
+/* Styl dla linku obejmującego całą kartę produktu */
+.fotoBox-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Przycisk kup teraz wewnątrz karty */
+.buy-action-btn {
+  display: block;
+  width: calc(100% - 32px);
+  margin: 10px auto 16px auto;
+  background-color: #0c899e;
+  color: #ffffff;
+  padding: 10px 0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.fotoBox-link:hover .buy-action-btn {
+  background-color: #085f6e;
+}
+
+.fotoBox-link:active .buy-action-btn {
+  transform: scale(0.95);
+}

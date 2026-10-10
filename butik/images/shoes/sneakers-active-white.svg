@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Sneakers Active White">
+<rect width="800" height="500" rx="28" fill="#f7f5f1"/>
+<ellipse cx="410" cy="400" rx="245" ry="22" fill="#dcd6ce" opacity=".65"/>
+<path d="M170 280 Q230 275 270 230 L330 150 Q350 130 375 155 L450 245 Q480 275 555 290 L605 315 Q630 330 620 355 Q610 372 575 372 L205 372 Q165 365 165 340 Z" fill="#f4f2ed" stroke="#403c3a" stroke-width="8" stroke-linejoin="round"/><path d="M280 230 Q355 255 435 240" fill="none" stroke="#b9b4ad" stroke-width="12"/><path d="M310 200 L380 225 M325 180 L395 210 M340 162 L410 195" stroke="#b9b4ad" stroke-width="8" stroke-linecap="round"/><path d="M175 350 Q400 372 620 348 L615 377 Q400 399 190 380 Z" fill="#d8d1c7" stroke="#403c3a" stroke-width="6"/><path d="M220 322 L285 322" stroke="#b9b4ad" stroke-width="8" stroke-linecap="round"/>
+<text x="400" y="455" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#6c6259">Sneakers Active White · Biały</text>
+</svg>

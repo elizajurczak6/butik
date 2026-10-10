@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Pliki CSS oraz Favicon -->
+    <link rel="stylesheet" href="rejestracjs.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <title>Butik</title>
+  </head>
+  <body>
+    <form action="register_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="icon_login.png" alt="Avatar" class="avatar" />
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Nazwa użytkownika</b></label>
+        <input
+          type="text"
+          placeholder="Wprowadź nazwę użytkownika"
+          name="uname"
+          required
+        />
+
+        <label for="email"><b>Adres e-mail</b></label>
+        <input
+          type="email"
+          placeholder="Wprowadź e-mail"
+          name="email"
+          required
+        />
+
+        <label for="psw"><b>Hasło</b></label>
+        <input
+          type="password"
+          placeholder="Wprowadź hasło"
+          name="psw"
+          required
+        />
+
+        <label for="psw-repeat"><b>Powtórz hasło</b></label>
+        <input
+          type="password"
+          placeholder="Powtórz hasło"
+          name="psw-repeat"
+          required
+        />
+
+        <label>
+          <input type="checkbox" name="terms" required />
+          Akceptuję <a href="regulamin.html">regulamin serwisu</a>
+        </label>
+
+        <button type="submit" class="signupbtn">Zarejestruj się</button>
+
+        <button type="button" class="kolor">
+          <a href="Zaloguj.html">Masz już konto? Zaloguj się</a>
+        </button>
+      </div>
+
+      <div class="container" style="background-color: #f1f1f1">
+        <button type="button" class="cancelbtn">
+          <a href="index.html">Anuluj</a>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

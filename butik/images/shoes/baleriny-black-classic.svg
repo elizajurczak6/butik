@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Baleriny Black Classic">
+<rect width="800" height="500" rx="28" fill="#f7f5f1"/>
+<ellipse cx="410" cy="400" rx="245" ry="22" fill="#dcd6ce" opacity=".65"/>
+<path d="M210 290 Q255 280 300 225 Q340 170 375 185 Q410 200 445 260 Q475 295 560 310 L600 325 Q625 340 610 360 Q600 373 565 373 L220 373 Q180 365 190 338 Z" fill="#242326" stroke="#403c3a" stroke-width="8" stroke-linejoin="round"/><path d="M300 225 Q350 245 420 255" fill="none" stroke="#d8d1c7" stroke-width="8"/><path d="M195 350 Q400 374 612 350 L608 375 Q400 398 210 380 Z" fill="#d8d1c7" stroke="#403c3a" stroke-width="5"/>
+<text x="400" y="455" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#6c6259">Baleriny Black Classic · Czarny</text>
+</svg>

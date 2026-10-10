@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Pliki CSS oraz Favicon -->
+    <link rel="stylesheet" href="logowanie.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <title>Butik</title>
+  </head>
+  <body>
+    <form action="action_page.php" method="post">
+      <div class="imgcontainer">
+        <img
+          src="icon_login.png
+        "
+          alt="Avatar"
+          class="avatar"
+        />
+      </div>
+      <div class="container">
+        <label for="uname"><b>Nazwa</b></label>
+        <input
+          type="text"
+          placeholder="Wprowadź nazwę użytkownika"
+          name="uname"
+          required
+        />
+
+        <label for="psw"><b>Hasło</b></label>
+        <input
+          type="password"
+          placeholder="Wprowadź hasło"
+          name="psw"
+          required
+        />
+
+        <button type="submit">Zaloguj się</button>
+        <a href="rejestracja.html" class="btn=link kolor"> Zarejestruj się</a>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Pamiętasz
+          mnie
+        </label>
+      </div>
+
+      <div class="container" style="background-color: #f1f1f1">
+        <button type="button" class="cancelbtn">
+          <a href="index.html">Cofnij</a>
+        </button>
+        <span class="psw"> <a href="index.html">kontynuuj jako gość</a></span>
+      </div>
+    </form>
+  </body>
+</html>

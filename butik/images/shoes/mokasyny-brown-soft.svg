@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Mokasyny Brown Soft">
+<rect width="800" height="500" rx="28" fill="#f7f5f1"/>
+<ellipse cx="410" cy="400" rx="245" ry="22" fill="#dcd6ce" opacity=".65"/>
+<path d="M185 275 Q250 270 300 220 L350 145 Q370 130 390 155 L440 235 Q480 278 565 295 Q620 305 625 342 Q620 365 585 368 L210 368 Q165 360 170 330 Z" fill="#795035" stroke="#403c3a" stroke-width="8" stroke-linejoin="round"/><path d="M300 220 Q360 250 435 236" fill="none" stroke="#d8d1c7" stroke-width="9"/><path d="M340 207 Q370 195 399 207 L415 232 L355 232 Z" fill="#d8d1c7" stroke="#403c3a" stroke-width="5"/><path d="M190 355 Q390 375 625 348 L625 372 Q410 397 195 380 Z" fill="#d8d1c7" stroke="#403c3a" stroke-width="6"/>
+<text x="400" y="455" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#6c6259">Mokasyny Brown Soft · Brązowy</text>
+</svg>

@@ -1,0 +1,82 @@
+/* Obramowanie formularza */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Pola tekstowe i hasła */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0 16px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Ogólny styl dla przycisków */
+button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Efekt najechania myszką (hover) */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Przycisk anuluj (czerwony) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Odnośniki wewnątrz przycisków */
+button a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+/* Szary przycisk powrotu do logowania */
+.kolor {
+  background-color: rgb(172, 170, 170);
+  opacity: 0.6;
+}
+
+.kolor:hover {
+  opacity: 1;
+}
+
+/* Kontener ze zdjęciem/awatarem */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Awatar */
+img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/* Marginesy wewnątrz sekcji */
+.container {
+  padding: 16px;
+}
+
+/* RWD – dopasowanie do mniejszych ekranów */
+@media screen and (max-width: 300px) {
+  .cancelbtn {
+    width: 100%;
+  }
+}

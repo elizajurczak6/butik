@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Szpilki Black Night">
+<rect width="800" height="500" rx="28" fill="#f7f5f1"/>
+<ellipse cx="410" cy="400" rx="245" ry="22" fill="#dcd6ce" opacity=".65"/>
+<path d="M245 115 Q290 110 315 165 L360 250 Q390 285 485 300 L585 320 Q620 330 615 352 Q610 370 575 370 L260 370 Q225 365 230 340 L255 280 L240 210 Z" fill="#242326" stroke="#403c3a" stroke-width="8" stroke-linejoin="round"/><path d="M250 275 L225 340 L210 375 L245 375 L270 300" fill="#242326" stroke="#403c3a" stroke-width="8" stroke-linejoin="round"/><path d="M235 350 Q410 370 615 350 L610 373 Q410 394 235 378 Z" fill="#d8d1c7" stroke="#403c3a" stroke-width="5"/>
+<text x="400" y="455" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#6c6259">Szpilki Black Night · Czarny</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Botki Classic Black">
+<rect width="800" height="500" rx="28" fill="#f7f5f1"/>
+<ellipse cx="410" cy="400" rx="245" ry="22" fill="#dcd6ce" opacity=".65"/>
+<path d="M260 120 L390 120 L390 265 Q420 280 465 292 L600 322 Q630 333 625 360 L235 360 Q215 352 230 328 L260 270 Z" fill="#202124" stroke="#403c3a" stroke-width="8" stroke-linejoin="round"/><path d="M260 270 L390 270 L390 135" fill="none" stroke="#403c3a" stroke-width="7"/><path d="M286 155 L365 155 M286 185 L365 185 M286 215 L365 215" stroke="#eee9e2" stroke-width="5" opacity=".75"/><path d="M235 360 Q410 372 625 360 L625 380 Q430 398 228 380 Z" fill="#d8d1c7" stroke="#403c3a" stroke-width="6"/>
+<text x="400" y="455" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#6c6259">Botki Classic Black · Czarny</text>
+</svg>
